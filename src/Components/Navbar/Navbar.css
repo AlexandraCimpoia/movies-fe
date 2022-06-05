@@ -1,0 +1,75 @@
+.navbar {
+  background-color: var(--base-color);
+  width: 100%;
+  color: #FFFCF2;
+  font-size: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.navbar .navbar-container {
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+}
+.navbar .navbar-container .container-left {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-container .container-left .app-name {
+  font-size: 25px;
+  color: #EB5E28;
+  margin-right: 35px;
+  margin-left: 15px;
+}
+.navbar .navbar-container .container-left span {
+  color: #FFFCF2;
+  text-decoration: none;
+  margin-right: 19px;
+  cursor: pointer;
+}
+.navbar .navbar-container .container-left span:hover {
+  color: #EB5E28;
+  text-decoration: none;
+}
+.navbar .navbar-container .container-left span:active {
+  color: #EB5E28;
+  text-decoration: none;
+}
+.navbar .navbar-container .container-left span:link {
+  color: #EB5E28;
+  text-decoration: none;
+}
+.navbar .navbar-container .container-left span:visited {
+  color: #EB5E28;
+  text-decoration: none;
+}
+.navbar .navbar-container .container-right {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-container .container-right .icon {
+  margin: 0px 7px;
+  cursor: pointer;
+}
+.navbar .navbar-container .container-right .icon:hover {
+  color: #EB5E28;
+}
+.navbar .navbar-container .container-right .account-container .options {
+  display: none;
+  background-color: #403D39;
+  border-radius: 5px;
+}
+.navbar .navbar-container .container-right .account-container span {
+  padding: 10px;
+  cursor: pointer;
+}
+.navbar .navbar-container .container-right .account-container:hover .options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+/*# sourceMappingURL=Navbar.css.map */

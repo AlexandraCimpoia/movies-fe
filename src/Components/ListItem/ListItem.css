@@ -1,0 +1,15 @@
+.item {
+  width: auto;
+  height: auto;
+  color: black;
+  margin-right: 10px;
+}
+.item img {
+  height: 300px;
+  width: auto;
+}
+.item img:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=ListItem.css.map */

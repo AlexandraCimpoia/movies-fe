@@ -1,0 +1,46 @@
+.movie-list {
+  width: 100%;
+  margin-top: 9px;
+}
+.movie-list .list-title {
+  color: #FFFCF2;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+.movie-list .movie-wrapper {
+  position: relative;
+}
+.movie-list .movie-wrapper .slider {
+  width: 50px;
+  height: 100%;
+  background-color: #403D39;
+  opacity: 0.4;
+  color: #FFFCF2;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+.movie-list .movie-wrapper .slider.left {
+  left: 0;
+}
+.movie-list .movie-wrapper .slider.right {
+  right: 0;
+}
+.movie-list .movie-wrapper .movie-container {
+  margin-left: 50px;
+  display: flex;
+  width: max-content;
+  margin-top: 15px;
+  transform: translateX(0px);
+  transition: all 1s ease;
+}
+
+.dialog-paper {
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=MovieList.css.map */

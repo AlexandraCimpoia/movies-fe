@@ -1,0 +1,92 @@
+.navbar{
+  background-color: var(--base-color);
+  width: 100%;
+  color: #FFFCF2;
+  font-size: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  .navbar-container{
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+
+    .container-left {
+      display: flex;
+      align-items: center;
+
+      .app-name{
+        font-size: 25px;
+        color: #EB5E28;
+        margin-right: 35px;
+        margin-left: 15px;
+      }
+
+      span{
+        color: #FFFCF2;
+        text-decoration: none;
+        margin-right: 19px;
+        cursor: pointer;
+
+        &:hover{
+          color: #EB5E28;
+          text-decoration: none;
+        }
+
+        &:active{
+          color: #EB5E28;
+          text-decoration: none;
+        }
+
+        &:link{
+          color: #EB5E28;
+          text-decoration: none;
+        }
+
+        &:visited{
+          color: #EB5E28;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .container-right{
+      display:flex;
+      align-items: center;
+
+      .icon{
+        margin: 0px 7px;
+        cursor: pointer;
+
+
+        &:hover{
+          color: #EB5E28;
+        }
+      }
+
+      .account-container{
+        .options{
+          display: none;
+          background-color: #403D39;
+          border-radius: 5px;
+        }
+
+        span{
+          padding: 10px;
+          cursor: pointer;
+        }
+
+        &:hover{
+          .options{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.featured-movie {
+  height: 90vh;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .movie-info {
+    width: 40%;
+    position: absolute;
+    left: 49px;
+    bottom: 99px;
+    color: #FFFCF2;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 400px;
+    }
+
+    .description {
+      margin: 20px 0px;
+      font-size: 15px;
+      color: #FFFCF2;
+    }
+
+    .buttons {
+      display: flex;
+
+      button {
+        background-color: #FFFCF2;
+        color: #252422;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        font-weight: 700;
+        margin-right: 10px;
+        cursor: pointer;
+
+        &:hover{
+          color: #EB5E28;
+        }
+
+        span{
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

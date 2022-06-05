@@ -1,0 +1,15 @@
+.item{
+  width: auto;
+  height: auto;
+  color: black;
+  margin-right: 10px;
+
+  img{
+    height: 300px;
+    width: auto;
+
+    &:hover{
+     cursor: pointer;
+    }
+  }
+}

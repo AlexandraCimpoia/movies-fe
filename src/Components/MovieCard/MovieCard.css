@@ -1,0 +1,54 @@
+.container {
+  background-color: #252422;
+  color: #FFFCF2;
+  padding: 25px;
+}
+.container .top-container {
+  margin-top: 20px;
+}
+.container .top-container .buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.container .top-container .buttons button {
+  cursor: pointer;
+  color: #252422;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #CCC5B9;
+}
+.container .top-container .buttons button:hover {
+  color: #EB5E28;
+}
+.container .details-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.container .details-container .rating {
+  color: #039803;
+}
+.container .details-container .certification {
+  border: 1px white solid;
+  padding: 0 5px;
+}
+.container .bottom-container {
+  margin-top: 20px;
+  display: flex;
+}
+.container .left {
+  width: 60%;
+}
+.container .right {
+  margin-left: 30px;
+}
+
+.rating-tooltip {
+  transform: translateX(10px) !important;
+}
+
+/*# sourceMappingURL=MovieCard.css.map */
