@@ -10,7 +10,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleLoginBtnClick = async (event) => {
-        event.preventDefault(); // stop stupid fucking refresh on button click
+        event.preventDefault(); // stop refresh on button click
         try {
             const response = await fetch(`https://localhost:7058/api/Login?username=${email}&password=${password}`);
             const { isLoggedIn } = await response.json();
