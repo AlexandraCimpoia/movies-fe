@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2454218b-d892-4dc0-ab73-37b9dc9e20f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/GenreSlider/GenreSlider.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/GenreSlider/GenreSlider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/MovieSlider/MovieSlider.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieList/MovieList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/GenreSlider/GenreSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieList/MovieList.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieList/MovieList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieList/MovieList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/GenreSlider/GenreSlider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Register/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Register/Register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Register/Register.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Register/Register.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Register/Register.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Register/Register.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,10 +90,29 @@
       <workItem from="1653570003725" duration="4841000" />
       <workItem from="1654355307124" duration="17220000" />
       <workItem from="1654425002067" duration="14218000" />
+      <workItem from="1654584883137" duration="971000" />
+      <workItem from="1655296871972" duration="591000" />
+      <workItem from="1655299613399" duration="2051000" />
+      <workItem from="1655645490092" duration="732000" />
+      <workItem from="1655827938791" duration="1786000" />
+      <workItem from="1655923072377" duration="742000" />
+      <workItem from="1656242561466" duration="14334000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated login">
+      <created>1654585158093</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654585158093</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated login" />
   </component>
 </project>

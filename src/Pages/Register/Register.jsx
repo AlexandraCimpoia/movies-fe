@@ -16,12 +16,28 @@ const Register = () => {
         setIsEmailComplete(true);
     }
 
-    const handleFinish = () => {
-        // validate and redirect
-        if (email === 'a' && password === 'b') {
-            history('/');
-        }  else {
-            setIsEmailComplete(false);
+    const handleFinish = async () => {
+        try {
+            const response = await fetch(`https://localhost:7058/api/Users`, {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify({
+                    "firstName": email.split("@")[0].split(".")[0],
+                    "lastName": email.split("@")[0].split(".")[1],
+                    "email": email,
+                    "username": password
+                })
+            });
+
+            if (!response.ok) {
+                throw response;
+            }
+
+            history('/login')
+        } catch (e) {
+            console.error(e);
         }
     }
 
@@ -43,7 +59,7 @@ const Register = () => {
                 <span>Movies Recommender System</span>
                 <button className='login-btn' onClick = {clickLogin}>Sign In</button>
             </div>
-            <div className="container">
+            <div className="register-container">
                 <h1>Ready to watch?</h1>
                 <h2>Create an account!</h2>
                 {!isEmailComplete ? (
@@ -54,7 +70,7 @@ const Register = () => {
                 ) : (
                     <form className="input-container">
                         <input type='password' placeholder='password' onChange={handlePasswordChange}/>
-                        <button className="register-btn" onClick={handleFinish}>Register!</button>
+                        <button type="button" className="register-btn" onClick={handleFinish}>Register!</button>
                     </form>
                 )}
             </div>

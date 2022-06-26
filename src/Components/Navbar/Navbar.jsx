@@ -10,7 +10,7 @@ import useFetch from "../useFetch/useFetch";
 import {Link} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
 
-const Navbar = ({ onItemSelect }) => {
+const Navbar = ({ onItemSelect, onMyRatingsClick, onMyRecommendationsClick }) => {
     const history = useNavigate();
 
     const {data: genre, error} = useFetch('https://localhost:7058/api/Genres');
@@ -69,8 +69,8 @@ const Navbar = ({ onItemSelect }) => {
                     </Menu>
 
                     <span>My List</span>
-                    <span>My Ratings</span>
-                    <span>My Recommendations</span>
+                    <span role="button" onClick={onMyRatingsClick}>My Ratings</span>
+                    <span role="button" onClick={onMyRecommendationsClick}>My Recommendations</span>
                 </div>
                 <div className="container-right">
                     <SearchIcon className="icon"/>
