@@ -10,7 +10,10 @@ import {shuffleArray} from "../../utils";
 const Home = () => {
     const {data: genres, error} = useFetch('https://localhost:7058/api/Genres');
     const {data: ratedMovies, ratedMoviesError} = useFetch(`https://localhost:7058/api/Users/RatedMovies?userId=7`);
-    const {data: recommendedMovies, recommendedMoviesError} = useFetch(`https://localhost:7058/api/MovieRecommendations?userId=7`);
+    const {
+        data: recommendedMovies,
+        recommendedMoviesError
+    } = useFetch(`https://localhost:7058/api/MovieRecommendations?userId=7`);
     const [selectedGenre, setSelectedGenre] = useState(null);
 
     const myRatingsRef = useRef(null);
@@ -48,7 +51,7 @@ const Home = () => {
                                 <span className="list-title">
                                     My Recommended movies
                                 </span>
-                    <MovieSlider movies={shuffleArray(recommendedMovies || [])} />
+                    <MovieSlider movies={shuffleArray(recommendedMovies || [])}/>
                 </div>)}
 
                 {ratedMovies &&
@@ -56,7 +59,7 @@ const Home = () => {
                                 <span className="list-title">
                                     My Ratings
                                 </span>
-                    <MovieSlider movies={shuffleArray(ratedMovies || [])} />
+                    <MovieSlider movies={shuffleArray(ratedMovies || [])}/>
                 </div>)}
 
                 {(genres || [])

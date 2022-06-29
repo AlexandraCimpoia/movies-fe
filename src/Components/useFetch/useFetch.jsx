@@ -26,10 +26,7 @@ const useFetch = (url) => {
                 } else {
                     setError(err.message);
                 }
-
             })
-
-
         return () => abortCont.abort();
     }, [url])
 
