@@ -7,7 +7,6 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import useFetch from "../useFetch/useFetch";
-import {Link} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
 
 const Navbar = ({ onItemSelect, onMyRatingsClick, onMyRecommendationsClick }) => {
@@ -37,10 +36,6 @@ const Navbar = ({ onItemSelect, onMyRatingsClick, onMyRecommendationsClick }) =>
                 <div className="container-left">
                     <TheaterComedyIcon/>
                     <span className="app-name">Movie Recommender System</span>
-                   {/* <Link to="/">
-                        <span>Home</span>
-                    </Link>*/}
-
                     <span
                         aria-controls='basic-menu'
                         aria-haspopup="true"
@@ -63,9 +58,7 @@ const Navbar = ({ onItemSelect, onMyRatingsClick, onMyRecommendationsClick }) =>
                                     onItemSelect(g.genreId);
                                 }}>{g.genre1}</MenuItem>
                             )
-
                         })}
-
                     </Menu>
 
                     <span>My List</span>

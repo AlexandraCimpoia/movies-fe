@@ -4,10 +4,16 @@ import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import {useState} from "react";
 import {Rating, Tooltip, Typography, Zoom} from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 const MovieCard = ({details}) => {
     const [isRatingOpen, setIsRatingOpen] = useState(false);
     const [ratingValue, setRatingValue] = useState(0);
+    const navigate = useNavigate();
+
+    const handlePlayBtnClick = () => {
+        navigate('../play');
+    }
 
     return (
         <div className="container">
@@ -20,7 +26,7 @@ const MovieCard = ({details}) => {
             <div className="top-container">
                 <h1 className="title">{details && details.title}</h1>
                 <div className="buttons">
-                    <button className="play">
+                    <button className="play" onClick={handlePlayBtnClick}>
                         <PlayArrowIcon/>
                     </button>
                     <button className="add">

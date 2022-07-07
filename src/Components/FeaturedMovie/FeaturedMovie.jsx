@@ -2,10 +2,16 @@ import "./FeaturedMovie.scss"
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import AddIcon from '@mui/icons-material/Add';
 import useFetch from "../useFetch/useFetch";
+import {useNavigate} from "react-router-dom";
 
 const FeaturedMovie = () => {
 
+    const navigate = useNavigate();
     const {data: movie, error} = useFetch('https://localhost:7058/api/Movies/63');
+
+    const handlePlayBtnClick = () => {
+        navigate('../play');
+    }
 
     return (
         <div className="featured-movie">
@@ -18,7 +24,7 @@ const FeaturedMovie = () => {
                     {movie && movie.description}
                 </span>
                 <div className="buttons">
-                    <button className="play">
+                    <button className="play" onClick={handlePlayBtnClick}>
                         <PlayArrowIcon/>
                         <span>Play</span>
                     </button>

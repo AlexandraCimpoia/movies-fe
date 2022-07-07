@@ -1,17 +1,17 @@
-.container{
+.container {
   background-color: #252422;
   color: #FFFCF2;
   padding: 25px;
 
-  .top-container{
+  .top-container {
     margin-top: 20px;
 
-    .buttons{
+    .buttons {
       margin-top: 20px;
       display: flex;
       gap: 10px;
 
-      button{
+      button {
         cursor: pointer;
         color: #252422;
         display: flex;
@@ -21,37 +21,38 @@
         padding: 10px;
         background-color: #CCC5B9;
 
-        &:hover{
+        &:hover {
           color: #EB5E28;
         }
       }
     }
   }
-  .details-container{
+
+  .details-container {
     margin-top: 20px;
     display: flex;
     gap: 10px;
 
-    .rating{
+    .rating {
       color: #039803;
     }
 
-    .certification{
+    .certification {
       border: 1px white solid;
       padding: 0 5px;
     }
   }
 
-  .bottom-container{
+  .bottom-container {
     margin-top: 20px;
     display: flex;
   }
 
-  .left{
+  .left {
     width: 60%;
   }
 
-  .right{
+  .right {
     margin-left: 30px;
   }
 }
