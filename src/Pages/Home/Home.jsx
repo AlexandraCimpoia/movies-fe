@@ -14,7 +14,9 @@ const Home = () => {
         data: recommendedMovies,
         recommendedMoviesError
     } = useFetch(`https://localhost:7058/api/MovieRecommendations?userId=7`);
+    const {data: allMovies, allMoviesError} = useFetch("https://localhost:7058/api/Movies/AllMovies");
     const [selectedGenre, setSelectedGenre] = useState(null);
+    const [searchValue, setSearchValue] = useState(null);
 
     const myRatingsRef = useRef(null);
     const myRecommendationsRef = useRef(null);
@@ -35,6 +37,10 @@ const Home = () => {
         myRecommendationsRef.current.scrollIntoView({behavior: "smooth", block: "end"});
     }
 
+    const handleOnSearch = (event) => {
+        setSearchValue(event.target.value);
+    };
+
     return (
         <div className="home-container">
             <Navbar
@@ -43,10 +49,11 @@ const Home = () => {
                 }}
                 onMyRatingsClick={handleMyRatingsClick}
                 onMyRecommendationsClick={handleMyRecommendationsClick}
+                onSearch={handleOnSearch}
             />
             <FeaturedMovie/>
             <div className='movie-list'>
-                {recommendedMovies &&
+                {recommendedMovies && !searchValue &&
                 (<div ref={myRecommendationsRef}>
                                 <span className="list-title">
                                     My Recommended movies
@@ -54,7 +61,7 @@ const Home = () => {
                     <MovieSlider movies={shuffleArray(recommendedMovies || [])}/>
                 </div>)}
 
-                {ratedMovies &&
+                {ratedMovies &&  !searchValue &&
                 (<div ref={myRatingsRef}>
                                 <span className="list-title">
                                     My Ratings
@@ -62,7 +69,7 @@ const Home = () => {
                     <MovieSlider movies={shuffleArray(ratedMovies || [])}/>
                 </div>)}
 
-                {(genres || [])
+                { !searchValue && (genres || [])
                     .filter(genre => !selectedGenre || genre.genreId === selectedGenre)
                     .map((genre) => {
                         return (
@@ -74,6 +81,14 @@ const Home = () => {
                             </div>
                         )
                     })}
+
+                {searchValue &&
+                (<div ref={myRatingsRef}>
+                                <span className="list-title">
+                                    Search list
+                                </span>
+                    <MovieSlider movies={(allMovies || []).filter((movie) => movie.title.toLowerCase().includes(searchValue.toLowerCase()))}/>
+                </div>)}
             </div>
         </div>
     )

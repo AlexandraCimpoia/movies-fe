@@ -8,8 +8,10 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import useFetch from "../useFetch/useFetch";
 import {useNavigate} from "react-router-dom";
+import SearchBar from "../SearchBar/SearchBar";
+import {TextField} from "@mui/material";
 
-const Navbar = ({ onItemSelect, onMyRatingsClick, onMyRecommendationsClick }) => {
+const Navbar = ({ onItemSelect, onMyRatingsClick, onMyRecommendationsClick, onSearch }) => {
     const history = useNavigate();
 
     const {data: genre, error} = useFetch('https://localhost:7058/api/Genres');
@@ -66,7 +68,8 @@ const Navbar = ({ onItemSelect, onMyRatingsClick, onMyRecommendationsClick }) =>
                     <span role="button" onClick={onMyRecommendationsClick}>My Recommendations</span>
                 </div>
                 <div className="container-right">
-                    <SearchIcon className="icon"/>
+                    {/*<SearchBar onChange={(value) => { onSearch(value); }}/>*/}
+                    <TextField onChange={onSearch} size="small" label="Search..." />
                     <AccountCircleIcon className="icon"/>
                     <div className="account-container">
                         <ArrowDropDownIcon className="icon"/>
