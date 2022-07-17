@@ -32,11 +32,11 @@ const MovieSlider = ({movies}) => {
         let distance = listRef.current.getBoundingClientRect().x - 50;
         if (direction === "left" && slideNumber > 0) {
             setSlideNumber(slideNumber - 1);
-            listRef.current.style.transform = `translateX(${500 + distance}px)`;
+            listRef.current.style.transform = `translateX(${1000 + distance}px)`;
         }
-        if (direction === "right" && slideNumber < 5) {
+        if (direction === "right" && slideNumber < 10) {
             setSlideNumber(slideNumber + 1);
-            listRef.current.style.transform = `translateX(${-500 + distance}px)`;
+            listRef.current.style.transform = `translateX(${-1000 + distance}px)`;
         }
     };
 

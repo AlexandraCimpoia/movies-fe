@@ -16,7 +16,7 @@ const darkTheme = createTheme({
 const App = () => {
     return (
         <ThemeProvider theme={darkTheme}>
-            <UserProvider>
+            <UserProvider> {/*toate paginile au acces la userId, pt ca sunt copii lui context provider*/}
                 <Router>
                     <Routes>
                         <Route exact path = "/" element={<Home />}/>

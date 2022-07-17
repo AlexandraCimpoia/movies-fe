@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2454218b-d892-4dc0-ab73-37b9dc9e20f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Context/UserContext.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MovieCard/MovieCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieCard/MovieCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieSlider/MovieSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieSlider/MovieSlider.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/PlayMovie/Play.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/PlayMovie/Play.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +34,15 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2916981YsrUGi2R9kLOCI8QbKkk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -123,7 +120,7 @@
       <workItem from="1657195620553" duration="22504000" />
       <workItem from="1657826490632" duration="867000" />
       <workItem from="1657870234911" duration="17814000" />
-      <workItem from="1658065655115" duration="4459000" />
+      <workItem from="1658065655115" duration="10151000" />
     </task>
     <task id="LOCAL-00001" summary="Updated login">
       <created>1654585158093</created>
@@ -160,18 +157,27 @@
       <option name="project" value="LOCAL" />
       <updated>1657718676199</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added things">
+      <created>1658072046494</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658072046494</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Updated login" />
     <MESSAGE value="added My ratings, My Recommendations" />
     <MESSAGE value="added play movie functionality" />
     <MESSAGE value="added play button functionality" />
     <MESSAGE value="added search bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added search bar" />
+    <MESSAGE value="added things" />
+    <option name="LAST_COMMIT_MESSAGE" value="added things" />
   </component>
 </project>

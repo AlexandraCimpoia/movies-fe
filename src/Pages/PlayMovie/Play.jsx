@@ -1,13 +1,20 @@
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import trailer from './trailer2.mp4'
+import {useNavigate} from "react-router-dom";
 
 import './Play.scss'
 
 const Play = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/');
+    }
+
     return (
         <div className="play-movie">
             <div className="back-button">
-                <KeyboardBackspaceIcon/>
+                <KeyboardBackspaceIcon onClick={handleClick}/>
                 Home
             </div>
             <div className="video-container">

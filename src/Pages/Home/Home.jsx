@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react'
+import React, {useContext, useRef, useState} from 'react'
 import "./Home.scss"
 import Navbar from "../../Components/Navbar/Navbar";
 import FeaturedMovie from "../../Components/FeaturedMovie/FeaturedMovie";
@@ -6,14 +6,16 @@ import useFetch from "../../Components/useFetch/useFetch";
 import GenreSlider from "../../Components/GenreSlider/GenreSlider";
 import MovieSlider from "../../Components/MovieSlider/MovieSlider";
 import {shuffleArray} from "../../utils";
+import {UserContext} from "../../Context/UserContext";
 
 const Home = () => {
+    const {userId} = useContext(UserContext);
     const {data: genres, error} = useFetch('https://localhost:7058/api/Genres');
-    const {data: ratedMovies, ratedMoviesError} = useFetch(`https://localhost:7058/api/Users/RatedMovies?userId=7`);
+    const {data: ratedMovies, ratedMoviesError} = useFetch(`https://localhost:7058/api/Users/RatedMovies?userId=${userId}`);
     const {
         data: recommendedMovies,
         recommendedMoviesError
-    } = useFetch(`https://localhost:7058/api/MovieRecommendations?userId=7`);
+    } = useFetch(`https://localhost:7058/api/MovieRecommendations?userId=${userId}`);
     const {data: allMovies, allMoviesError} = useFetch("https://localhost:7058/api/Movies/AllMovies");
     const [selectedGenre, setSelectedGenre] = useState(null);
     const [searchValue, setSearchValue] = useState(null);
@@ -51,8 +53,7 @@ const Home = () => {
                 onMyRecommendationsClick={handleMyRecommendationsClick}
                 onSearch={handleOnSearch}
             />
-            {!searchValue && <FeaturedMovie/>}
-            {/*<FeaturedMovie/>*/}
+            {!selectedGenre && !searchValue && <FeaturedMovie/>}
             <div className='movie-list'>
                 {recommendedMovies && !searchValue &&
                 (<div ref={myRecommendationsRef}>

@@ -33,11 +33,6 @@ const MovieCard = ({details}) => {
                         title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen/>
-                {/*<YouTube videoId={details && details.trailer}/>*/}
-                {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/k10ETZ41q5o"*/}
-                {/*        title="YouTube video player" frameBorder="0"*/}
-                {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
-                {/*        allowFullScreen></iframe>*/}
             </div>
 
             <div className="top-container">
@@ -91,9 +86,9 @@ const MovieCard = ({details}) => {
                     <div className="description">{details && details.description}</div>
                 </div>
                 <div className="right">
-                    <div className="genres">Genres:</div>
-                    <div className="cast">Cast:</div>
-                    <div className="director">Director: {details && details.director}</div>
+                    <div className="genres"><b>Genres:</b> Action, Adventure, Drama , Fantasy</div>
+                    <div className="cast"><b>Cast:</b> Viggo Mortensen, Elijah Wood, Ian McKellen, Orlando Bloom</div>
+                    <div className="director"><b>Director:</b> Peter Jackson</div>
                 </div>
             </div>
         </div>
