@@ -51,7 +51,8 @@ const Home = () => {
                 onMyRecommendationsClick={handleMyRecommendationsClick}
                 onSearch={handleOnSearch}
             />
-            <FeaturedMovie/>
+            {!searchValue && <FeaturedMovie/>}
+            {/*<FeaturedMovie/>*/}
             <div className='movie-list'>
                 {recommendedMovies && !searchValue &&
                 (<div ref={myRecommendationsRef}>

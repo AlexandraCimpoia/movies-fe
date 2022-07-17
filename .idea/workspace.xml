@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2454218b-d892-4dc0-ab73-37b9dc9e20f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/youtube/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/SearchBar/SearchBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Context/UserContext.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieCard/MovieCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieCard/MovieCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -42,6 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -54,7 +62,7 @@
       <recent name="C:\Users\alexa\Desktop\ASE\Licenta\movies-app\movies-fe\admin\youtube" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -112,7 +120,10 @@
       <workItem from="1656242561466" duration="26310000" />
       <workItem from="1656438893015" duration="9954000" />
       <workItem from="1656599493726" duration="3043000" />
-      <workItem from="1657195620553" duration="15253000" />
+      <workItem from="1657195620553" duration="22504000" />
+      <workItem from="1657826490632" duration="867000" />
+      <workItem from="1657870234911" duration="17814000" />
+      <workItem from="1658065655115" duration="4459000" />
     </task>
     <task id="LOCAL-00001" summary="Updated login">
       <created>1654585158093</created>
@@ -142,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657197800055</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added search bar">
+      <created>1657718676199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657718676199</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +171,7 @@
     <MESSAGE value="added My ratings, My Recommendations" />
     <MESSAGE value="added play movie functionality" />
     <MESSAGE value="added play button functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="added play button functionality" />
+    <MESSAGE value="added search bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added search bar" />
   </component>
 </project>

@@ -1,27 +1,31 @@
 import './Login.scss'
-import {useState} from "react";
+import {useContext, useState} from "react";
 import {useNavigate} from "react-router-dom";
+import {UserContext} from "../../Context/UserContext";
 
 const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isEmailOrPasswordInvalid, setIsEmailOrPasswordInvalid] = useState(false);
+    const { setUserId } = useContext(UserContext);
     const navigate = useNavigate();
 
     const handleLoginBtnClick = async (event) => {
         event.preventDefault(); // stop refresh on button click
         try {
             const response = await fetch(`https://localhost:7058/api/Login?username=${email}&password=${password}`);
-            const { isLoggedIn } = await response.json();
+            const { isLoggedIn, userId } = await response.json();
 
             if (isLoggedIn === 'true') {
                 navigate('../');
                 setIsEmailOrPasswordInvalid(false);
+                setUserId(userId);
             } else {
                 setPassword('');
                 setEmail('');
                 setIsEmailOrPasswordInvalid(true);
+                setUserId(null);
             }
         } catch (e) {
             console.dir(e);

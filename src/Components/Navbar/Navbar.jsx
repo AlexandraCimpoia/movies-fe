@@ -8,7 +8,6 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import useFetch from "../useFetch/useFetch";
 import {useNavigate} from "react-router-dom";
-import SearchBar from "../SearchBar/SearchBar";
 import {TextField} from "@mui/material";
 
 const Navbar = ({ onItemSelect, onMyRatingsClick, onMyRecommendationsClick, onSearch }) => {
